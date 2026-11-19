@@ -1,0 +1,25 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.vietsub.live'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'com.vietsub.live'
+        minSdk 29
+        targetSdk 35
+        versionCode 1
+        versionName '0.1-beta'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    implementation 'com.google.mlkit:translate:17.0.3'
+}
